@@ -1,20 +1,86 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🌿 Mindful Workspace
 
-# Run and deploy your AI Studio app
+A soft, minimalist task manager and productivity suite designed for focus and clarity. This application provides a distraction-free environment to manage your daily tasks, notes, and focus sessions.
 
-This contains everything you need to run your app locally.
+## ✨ Features
 
-View your app in AI Studio: https://ai.studio/apps/7f28e091-1218-43f6-9f35-b8d58ca56503
+- **✅ Task Management**: Create, track, and manage daily and upcoming tasks with priority levels and categories.
+- **🕒 Focus Timer**: A built-in Pomodoro-style timer (25m Focus / 5m Break) to keep you in the flow.
+- **📅 Visual Calendar**: Integrated schedule view to see your workload across the month.
+- **📝 Zen Notes**: A minimalist note-taking system with pinning and categorization.
+- **📊 Productivity Insights**: Live analytics calculated from your real task data.
+- **🎨 Premium Aesthetic**: Clean, responsive UI with glassmorphism and smooth animations.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 🚀 Getting Started
 
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- npm (installed with Node.js)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Installation
+1. Clone the repository or download the source code.
+2. Open your terminal in the project directory.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+Run the local development server:
+```bash
+npm run dev
+```
+The app will be available at `http://localhost:3000`.
+
+---
+
+## 📱 Android Deployment
+
+To turn this web app into an Android application, we use **Capacitor**.
+
+### Prerequisites
+- **Android Studio**: [Download & Install](https://developer.android.com/studio)
+- **Android SDK**: Configured via Android Studio.
+
+### Step-by-Step Deployment
+1. **Build the production web assets**:
+   ```bash
+   npm run build
+   ```
+2. **Install Capacitor dependencies** (if not already installed):
+   ```bash
+   npm install @capacitor/core @capacitor/cli @capacitor/android
+   ```
+3. **Initialize Capacitor**:
+   ```bash
+   npx cap init
+   ```
+4. **Add the Android platform**:
+   ```bash
+   npx cap add android
+   ```
+5. **Sync your web code to the Android project**:
+   ```bash
+   npx cap sync
+   ```
+6. **Open in Android Studio to build the APK**:
+   ```bash
+   npx cap open android
+   ```
+
+---
+
+## 🛠️ Tech Stack
+- **Framework**: React 19 (Vite)
+- **Styling**: Tailwind CSS 4
+- **Icons**: Lucide React
+- **Animations**: Motion (Framer Motion)
+- **Date Handling**: date-fns
+- **Charts**: Recharts
+
+---
+
+## 📄 License
+MIT
